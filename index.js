@@ -101,6 +101,6 @@ app.post("/upDate/:id", (req, res) => {
   res.redirect("/");
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
 });
