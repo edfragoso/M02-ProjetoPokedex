@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  background-color: #dc0a2d;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 0.6rem;
+}
+
+nav img {
+  width: 3rem;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+nav h1:hover{
+  color: yellow;
+  transform: scale(1.5);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+nav h1 ul li a:hover {
+  color: yellow;
+  transform: scale(1.5);
+}
+
+section#cadastro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5rem;
+}
+
+section#cadastro h2 {
+  width: 100%;
+  text-align: center;
+  color: rgb(109, 109, 109);
+}
+
+section#cadastro form {
+  display: flexbox;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+section#cadastro article img {
+  width: 10rem;
+  box-shadow: 5px 5px 5px 5px #00000015;
+  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+}
+
+section#cadastro article h3 {
+  width: 100%;
+  text-align: center;
+  margin: rem 0 5rem 0;
+  padding-bottom: 1rem;
+  color: rgb(109, 109, 109);
+}
+
+section#cadastro form input {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  outline: none;
+  border: solid 2px rgb(197, 197, 197);
+  border-radius: 10px;
+  margin: 0 1rem 1rem 1rem;
+}
+
+section#cadastro form label {
+  margin: 1rem;
+  color: rgb(148, 148, 148);
+}
+
+section#cadastro form button {
+  padding: 0.6rem;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border: solid 1px red;
+  border-radius: 10px;
+  color: red;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+section#cadastro form button:hover {
+  background-color: red;
+  color: #fff;
+}
+
+footer {
+  background-color: #dc0a2d;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer p {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}

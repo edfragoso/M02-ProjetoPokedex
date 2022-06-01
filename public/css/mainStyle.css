@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: top;
+  z-index: 9999;
+  width: 100%;
+  background-color: #dc0a2d;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 0.6rem;
+}
+
+nav img {
+  width: 3rem;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 1.4rem;
+}
+nav h1:hover {
+  color: yellow;
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+nav ul li a:hover {
+  color: yellow;
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+
+header img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  margin: 0 10rem 0 10rem;
+}
+
+/* estilização da menssagem de confirmação*/
+section#menssagem {
+  padding: 1.5rem;
+  background-color: rgb(197, 255, 214);
+  color: #004d04;
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span#close {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+span#close:hover {
+  color: rgb(255, 0, 0);
+  transform: scale(1.5);
+}
+/* fim da estilização da menssagem de confirmação*/
+
+section#cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+section#cards div.card {
+  width: 10rem;
+  box-shadow: 5px 5px 5px 5px #00000015;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 0rem 0 3rem 0;
+  transition: all 0.3s ease-out;
+}
+
+.card:hover {
+  transform: scale(1.06);
+}
+
+section#cards h2 {
+  width: 100%;
+  text-align: center;
+}
+
+section#cards div.card img {
+  width: 100%;
+}
+
+section#cards div.card h3 {
+  margin-bottom: 1rem;
+}
+
+section#cards div.card p.descricao {
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #dc0a2d;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer p {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}

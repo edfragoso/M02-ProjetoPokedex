@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mainStyle.css">
+    <title>Descrição</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="/img/pokebola.png" alt="Pokebola"></li>
+            <li>
+                <a href="/">
+                    <h1>Pokédex</h1>
+                </a>
+            </li>
+            <li><a href="/cadastro">Cadastrar Pokemons</a> </li>
+            
+        </ul>
+    </nav>
+
+    <section id="cards">
+       
+        <div class="card">
+          
+          <img src="<%= pokemon.imagem %>" alt="pokemon">
+            
+            <h3><strong><%= pokemon.nome %></strong></h3>
+            
+            <p class="numero"><strong>Nº </strong><%= pokemon.id %></p>
+            <p class="descricao"><strong>Descrição: </strong><%= pokemon.descricao %></p>
+            <p class="tipo"><strong>Tipo: </strong><%= pokemon.tipo %></p>
+            <p class="altura"><strong>Altura: </strong><%= pokemon.altura %> mt.</p>
+            <p class="peso"><strong>Peso: </strong><%= pokemon.peso %> kg</p>
+            <p class="categoria"><strong>Categoria: </strong><%= pokemon.categoria %></p>
+            <p class="habilidade"><strong>Habilidade: </strong><%= pokemon.habilidade %></p>
+
+            <a href="/editar/<%= pokemon.id %>">Editar</a>
+            <a href="/delete/<%= pokemon.id %>">Apagar</a>
+            
+        </div>
+    
+      </section>
+</body>
+</html>
